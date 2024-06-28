@@ -1,0 +1,21 @@
+.body {
+    padding: 10px;
+}
+
+.skill {
+    width: 60%;
+    background-color: #ffedd5;
+    justify-content: center;
+    margin: auto;
+}
+
+.skillinfo {
+   padding: 50px;
+    line-height: 2.2;
+    margin-top: 30PX;
+    text-align: start;
+}
+
+p {
+    margin: 0px;
+}

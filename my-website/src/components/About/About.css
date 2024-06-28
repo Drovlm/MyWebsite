@@ -1,0 +1,21 @@
+.bodys {
+  padding: 10px;
+}
+
+.aboutme {
+  width: 60%;
+  background-color: #e0e7f3;
+  justify-content: center;
+  margin: auto;
+}
+
+.adress {
+  padding: 50px;
+  line-height: 2.2;
+  margin-top: 30px;
+  text-align: start;
+}
+
+p {
+  margin: 0px;
+}
