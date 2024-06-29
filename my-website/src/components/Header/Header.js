@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom' ;
 
 const Header = () => {
   const navigate = useNavigate()
-  const handleAboutClick = () => {
+  const handleaboutClick = () => {
     navigate("/about");
   };
   const handleSkillsClick = () => {
@@ -17,35 +17,37 @@ const Header = () => {
 
   return (
     <header className="header">
+      <div className="headerreal">
       <section className="logoName">
         <p>Mudar Jannoud</p>
       </section>
 
       <div className="options">
         <div className="lang">
-          <p1>EN</p1>
+          <a>EN</a>
           <p>/</p>
-          <p1>RU</p1>
+          <a>РУ</a>
           <p>/</p>
-          <p1>ع</p1>
+          <a>ع</a>
         </div>
         <div className="info">
-          <div className="aboinfo" tabindex="1" id="about">
-            <a href={() => false} onClick={handleAboutClick}>
+          <div className="aboinfo" tabIndex="1" id="about">
+            <a onClick={handleaboutClick}>
               About me
             </a>
           </div>
-          <div className="skills" tabindex="1" id="skills">
-            <a href={() => false} onClick={handleSkillsClick}>
+          <div className="skills" tabIndex="1" id="skills">
+            <a onClick={handleSkillsClick}>
               Skills
             </a>
           </div>
-          <div className="contact" tabindex="1" id="contact">
-            <a href={() => false} onClick={handleContactClick}>
+          <div className="contact" tabIndex="1" id="contact">
+            <a onClick={handleContactClick}>
               Contact
             </a>
           </div>
         </div>
+      </div>
       </div>
     </header>
   

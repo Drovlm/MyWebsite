@@ -1,25 +1,44 @@
 import React from "react";
 import "./About.css";
+import prof from "../../images/1.jpg";
+
 const About = () => {
   return (
-    <body className="bodys">
+    <div className="bodys">
       <div className="aboutme">
+        <div className="image">
+          <img className="img" src={prof} alt="Logo" />
+        </div>
+
         <div className="adress">
           <p>
-            Hi, I'm Mudar Frontend Developer. with a passion for crafting
-            stunning, scalable, and user-friendly products that exceed
-            expectations. With a keen eye for detail, I design and develop
-            interfaces that are both aesthetically pleasing and intuitive to
-            use.
+            Hi, I'm Mudar. I have a profound passion for website development,
+            particularly with React and SQL. The process of building dynamic and
+            responsive web applications captivates me, and I find joy in every
+            aspect of development, from designing intuitive user interfaces to
+            optimizing complex backend databases. My journey in web development
+            has been fueled by a constant desire to learn, grow, and stay
+            updated with the latest technologies and industry best practices.
           </p>
           <p>
-            With extensive experience working with React JS, I'm well-versed in
-            building fast-paced, high-performance applications that are easy to
-            maintain and update.
+            I thrive on tackling challenging projects that push my skills to new
+            heights and allow me to innovate. Whether it's crafting new
+            features, debugging intricate issues, or fine-tuning performance, I
+            am dedicated to delivering high-quality solutions that meet user
+            needs and exceed expectations. I believe that web development is not
+            just a career but a craft that requires dedication, creativity, and
+            a keen eye for detail.
           </p>
           <p>
-            My expertise in SQL and PHP allows me to seamlessly integrate
-            data-driven solutions that meet the needs of complex projects.
+            Beyond the technical aspects, I enjoy collaborating with other
+            developers, designers, and stakeholders to create products that make
+            a real difference. The opportunity to bring creative ideas to life
+            and see them in action on the web is what drives me every day. I'm
+            always excited about the next project, eager to explore new
+            technologies, and ready to transform innovative concepts into
+            functional, user-friendly web applications. Web development is my
+            passion, and I am committed to continually honing my skills and
+            contributing to the digital world.
           </p>
           <p>
             I'm driven by a passion for beautiful interfaces and intuitive UX
@@ -29,7 +48,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 export default About;

@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Header, About, Contact, Skills } from "./components";
+import i18next from 'i18next';
+import "./i18n.js";
 
 const App = () => {
   return (

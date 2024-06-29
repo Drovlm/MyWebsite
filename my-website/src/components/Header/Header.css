@@ -1,15 +1,14 @@
 .header {
   margin: auto;
-  width: 60%;
+  width: 70%;
   padding: 5px;
   justify-content: center;
-  background-color: #F0F3FA;
   box-shadow: 0px 15px 10px -15px #111;
   position: sticky;
-  top: 0;
+  border-radius: 10px;
+  top: 0px;
   z-index: 999;
-
-  background: rgba( 255, 255, 255, 0 );
+  background: rgba(202, 16, 16, 0);
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
 }
@@ -34,12 +33,12 @@
   display: flex;
 }
 
-p1 {
+a {
   cursor: pointer;
   transition: 0.8s;
 }
 
-p1:active {
+a:active {
   text-decoration: underline;
 }
 
@@ -95,4 +94,16 @@ p1:active {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: #b1c9ef;
+}
+
+@media screen and (max-width: 1400px) {
+  .header { 
+  width: 90%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .header { 
+  width: auto;
+  }
 }

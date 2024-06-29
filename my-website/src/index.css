@@ -4,6 +4,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #F0F3FA;
   font-size: 18px;
+  margin: 0 auto;
+  padding: 0 5%;
+  clear: both;
+  scroll-behavior: smooth;
 }
 
 code {
