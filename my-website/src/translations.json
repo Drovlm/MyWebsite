@@ -1,0 +1,89 @@
+{
+  "en": {
+    "header": {
+      "about": "About me",
+      "skills": "Skills",
+      "contact": "Contact"
+    },
+    "skills": {
+      "Frontend Development:": {
+        "React": "Proficient in building dynamic user interfaces",
+        "React DOM": "Expertise in DOM manipulation with React",
+        "React Node": "Skilled in integrating React with backend services",
+        "HTML & CSS": "Strong foundation in creating and styling web pages"
+      },
+      "Backend Development:": {
+        "PHP": "Experienced in server-side scripting and web development",
+        "SQL": "Competent in database management and query optimization"
+      },
+      "DevOps & Tools:": {
+        "Docker": "Knowledgeable in containerization for streamlined development and deployment",
+        "Git": "Proficient in version control and collaborative development"
+      },
+      "Languages:": {
+        "English": "",
+        "Russian": "",
+        "Arabic": ""
+      }
+    },
+
+    "ru": {
+      "header": {
+        "name": "Мудар Джаннуд",
+        "about": "обо мне",
+        "skills": "Навыки",
+        "contact": "Контакт"
+      },
+      "skills": {
+        "Фронтенд-разработка:": {
+          "React": "Умеете создавать динамические пользовательские интерфейсы",
+          "React DOM": "Опыт манипулирования DOM с помощью React.",
+          "React Node": "Умение интегрировать React с серверными сервисами.",
+          "HTML & CSS": "Прочный фундамент в создании и стилизации веб-страниц."
+        },
+        "Бэкэнд-разработка:": {
+          "PHP": "Опыт написания серверных сценариев и веб-разработки.",
+          "SQL": "Компетентен в управлении базами данных и оптимизации запросов."
+        },
+        "DevOps и инструменты:": {
+          "Docker": "Знание контейнеризации для упрощения разработки и развертывания.",
+          "Git": "Умение работать с системами контроля версий и совместной разработки."
+        },
+        "Языки:": {
+          "Английский": "",
+          "Русский": "",
+          "Арабский": ""
+        }
+      }
+    },
+    "ar": {
+      "header": {
+        "name": "مضر جنود",
+        "about": "معلومات عني",
+        "skills": "مهارات",
+        "contact": "تواصل"
+      },
+      "skills": {
+        "تطوير الواجهة الأمامية:": {
+          "React": "اتقان بناء واجهات المستخدم الديناميكية",
+          "React DOM": "الخبرة في معالجة DOM باستخدام React",
+          "React Node": "دمج React مع الخدمات الخلفية",
+          "HTML & CSS": "أساس قوي في إنشاء وتصميم صفحات الويب"
+        },
+        "تطوير الواجهة الخلفية:": {
+          "PHP": "خبرة في البرمجة النصية من جانب الخادم وتطوير الويب",
+          "SQL": "الكفاءة في إدارة قواعد البيانات وتحسين الاستعلام"
+        },
+        "عمليات التطوير والأدوات:": {
+          "Docker": "المعرفة في مجال النقل بالحاويات لتبسيط التطوير والنشر",
+          "Git": "التحكم في الإصدار والتطوير التعاوني"
+        },
+        "اللفات:": {
+          "الانكليزية": "",
+          "الروسية": "",
+          "العربية": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.body {
+  padding: 10px;
+  padding-top: 20px;
+  width: 68%;
+}
+
+.contacts {
+  background-color: rgb(239, 246, 225);
+  justify-content: center;
+  margin: auto;
+}
+
+.contactinfo {
+  padding: 30px;
+  padding-top: 50px;
+  line-height: 2.2;
+  text-align: start;
+}
+
+.Tlink {
+  color: black;
+  text-decoration: none;
+}
+
+.Tlink:hover {
+  color: rgb(86, 86, 86);
+}
+
+.Glink {
+  color: black;
+  text-decoration: none;
+}
+
+.Glink:hover {
+  color: rgb(86, 86, 86);
+}
+
+@media screen and (max-width: 1400px) {
+  .body {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .contacts {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contacts {
+    width: auto;
+    font-size: 16px;
+  }
+  .contactinfo {
+    padding-top: 20px;
+  }
+}

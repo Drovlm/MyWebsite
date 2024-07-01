@@ -1,0 +1,174 @@
+.header {
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  background: rgba(202, 16, 16, 0);
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+}
+
+.rearhead {
+  width: 68%;
+  box-shadow: 0px 15px 10px -15px #111;
+  border-radius: 7px;
+}
+
+.logoName {
+  height: 80px;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.options {
+  display: flex;
+}
+
+.lang {
+  width: 90px;
+  padding: 3px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+a {
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.info {
+  margin: auto;
+  width: 40%;
+  display: flex;
+  position: relative;
+  right: 48px;
+  justify-content: space-between;
+}
+
+.aboinfo {
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.aboinfo:active, .aboinfo:focus {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #b1c9ef;
+}
+
+.skills {
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.skills:active, .skills:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #b1c9ef;
+}
+
+.contact {
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact:active, .contact:focus  {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #b1c9ef;
+}
+
+@media screen and (max-width: 1400px) {
+  .rearhead {
+    width: 90%;
+
+    
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .header { 
+  width: auto;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .lang {
+    font-size: 17px;
+    width: auto;
+  }
+
+  .info {
+    width: 60%;
+    right: 0px;
+  }
+
+  .aboinfo {
+    width: auto;
+    font-size: 17px;
+  }
+
+  .skills {
+    width: auto;
+    font-size: 17px;
+  }
+
+  .contact {
+    width: auto;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logoName { 
+  font-size: 40px;
+  padding-top: 10px;
+  }
+  .lang {
+    font-size: 15px;
+    width: auto;
+  }
+
+  .info {
+    width: 60%;
+    right: 0px;
+  }
+
+  .aboinfo {
+    width: auto;
+    font-size: 15px;
+  }
+
+  .skills {
+    width: auto;
+    font-size: 15px;
+  }
+
+  .contact {
+    width: auto;
+    font-size: 15px;
+  }
+}
