@@ -103,14 +103,16 @@ a:active {
 @media screen and (max-width: 1400px) {
   .rearhead {
     width: 90%;
-
-    
   }
 }
 
 @media screen and (max-width: 1070px) {
   .header { 
   width: auto;
+  }
+
+  .info {
+    width: 70%;
   }
 }
 
@@ -121,8 +123,7 @@ a:active {
   }
 
   .info {
-    width: 60%;
-    right: 0px;
+    width: 80%;
   }
 
   .aboinfo {
@@ -152,7 +153,7 @@ a:active {
   }
 
   .info {
-    width: 60%;
+    width: 80%;
     right: 0px;
   }
 
