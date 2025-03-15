@@ -52,7 +52,6 @@ a:active {
   width: 40%;
   display: flex;
   position: relative;
-  right: 48px;
   justify-content: space-between;
 }
 

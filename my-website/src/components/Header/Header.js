@@ -34,7 +34,9 @@ const Header = () => {
         </section>
 
         <div className="options">
-          <div className="lang">
+          
+
+         {/* <div className="lang">
             <a onClick={() => handleLanguageChange("en")}>EN</a>
             <p>/</p>
             <a a onClick={() => handleLanguageChange("ru")}>
@@ -44,7 +46,9 @@ const Header = () => {
             <a a onClick={() => handleLanguageChange("ar")}>
               ع
             </a>
-          </div>
+          </div>*/}
+
+
           <div className="info">
             <div className="aboinfo" tabIndex="1" id="about">
               <a onClick={handleaboutClick}>About me</a>
