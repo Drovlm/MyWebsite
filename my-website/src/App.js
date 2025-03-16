@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
+ 
         <initReactI18next i18n={i18n}>
           <Header />
           <Routes>
