@@ -1,7 +1,10 @@
 .body {
   padding: 10px;
   padding-top: 20px;
-  width: 68%;
+  width: 65%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts {
@@ -47,12 +50,19 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 660px) {
+  .body {
+    width: 95%;
+  }
+  
   .contacts {
     width: auto;
     font-size: 16px;
   }
   .contactinfo {
+    padding: 12px;
+
     padding-top: 20px;
+
   }
 }

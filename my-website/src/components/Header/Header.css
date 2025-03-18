@@ -117,6 +117,10 @@ a:active {
 }
 
 @media screen and (max-width: 660px) {
+  .rearhead {
+    width: 100%;
+  } 
+  
   .lang {
     font-size: 17px;
     width: auto;
@@ -143,6 +147,10 @@ a:active {
 }
 
 @media screen and (max-width: 400px) {
+  .rearhead {
+    width: 100%;
+  } 
+  
   .logoName { 
   font-size: 40px;
   padding-top: 10px;
