@@ -1,7 +1,7 @@
 .body {
   padding: 10px;
   padding-top: 20px;
-  width: 65%;
+  width: 55%;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,10 @@
   text-align: start;
 }
 
+.imp {
+font-weight: 900;
+}
+
 ul {
   font-weight: 700;
 }
@@ -31,13 +35,16 @@ li {
 
 @media screen and (max-width: 1400px) {
   .body {
-    width: 85%;
+    width: 75%;
   }
 }
 
 @media screen and (max-width: 1070px) {
   .skill {
     width: auto;
+  }
+    .body {
+  width: 85%;
   }
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Header, About, Contact, Skills } from "./components";
+import { Header, About, Contact, Skills, Footer } from "./components";
 import { initReactI18next } from 'react-i18next';
 import i18n from './i18n';
 
@@ -16,6 +16,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
+<Route path="/Footer" element={<Footer />} />
           </Routes>
         </initReactI18next>
       </BrowserRouter>

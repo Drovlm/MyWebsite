@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import prof from "../../images/1.jpg";
+import prof from "../../images/2.jpg";
 
 const About = () => {
   return (
@@ -10,15 +10,13 @@ const About = () => {
           <img className="img" src={prof} alt="Logo" />
         </div>
 
-        <div className="adress">
+        <div className="intro">
           <p>
-            Hi, I'm Mudar. I have a profound passion for website development,
-            particularly with React and SQL. The process of building dynamic and
-            responsive web applications captivates me, and I find joy in every
-            aspect of development, from designing intuitive user interfaces to
-            optimizing complex backend databases. My journey in web development
-            has been fueled by a constant desire to learn, grow, and stay
-            updated with the latest technologies and industry best practices.
+         Hi, i'm  <span class="highlight">Mudar</span>
+         , a Syrian web developer based in Moscow. </p>
+           <p>
+         My passion is web development, and I’m proficient in React, HTML, CSS, SQL, and PHP.
+         I love creating dynamic and responsive web applications where the frontend (React, HTML, CSS) and backend (SQL, PHP) work together seamlessly as one cohesive system.
           </p>
           <p>
             I thrive on tackling challenging projects that push my skills to new
