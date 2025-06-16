@@ -3,6 +3,7 @@ import './Contact.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
+    time: '',
     name: '',
     email: '',
     comment: ''
@@ -24,7 +25,7 @@ const ContactForm = () => {
     setSubmitStatus(null);
 
     try {
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbzzevLyncrE7slya2e4HavxbgXx1JInAFCMTUnjMc0p/exec';
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbyB_Iy9qgem3cf8BZaL_dgwnpewEGQjVnSdXoB7uEyt3zliUcRNX8myqyOzAL2KdfsamA/exec';
       
       const submissionData = new FormData();
       submissionData.append('name', formData.name);
@@ -151,18 +152,8 @@ const Contact = () => {
       <div className='contacts'>
                 <div className='social-links'>
           <h3>Connect Directly</h3>
-          <div className="link-card">
-            <div>
-              <a href="https://github.com/Drovlm">Telegram</a>
-            </div>
-          </div>
-          <div className="link-card">
-       
-            <div>
-              <a href="https://github.com/Drovlm">GitHub</a>
-        
-            </div>
-          </div>
+          <a href="https://t.me/Drovlm" className="link-card-t" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <a href="https://github.com/Drovlm" className="link-card-g"target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <ContactForm />
       </div>
@@ -170,5 +161,8 @@ const Contact = () => {
   );
 };
 
-
 export default Contact;
+
+
+
+

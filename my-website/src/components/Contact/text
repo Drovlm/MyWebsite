@@ -1,0 +1,44 @@
+
+function doPost(e) {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  let data = {};
+  
+  // Handle both form data and JSON payloads
+  if (e.postData && e.postData.type === 'application/json') {
+    try {
+      data = JSON.parse(e.postData.contents);
+    } catch (err) {
+      // If JSON parsing fails, try form data
+      data = e.parameter || {};
+    }
+  } else {
+    data = e.parameter || {};
+  }
+  
+  try {
+    // Append data with timestamp
+    sheet.appendRow([
+      new Date(), 
+      data.name || '', 
+      data.email || '', 
+      data.comment || ''
+    ]);
+    
+    // Return success response
+    return ContentService.createTextOutput(
+      JSON.stringify({ status: 'success' })
+    ).setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    // Return error response
+    return ContentService.createTextOutput(
+      JSON.stringify({ status: 'error', message: err.toString() })
+    ).setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+// Optional: For testing the endpoint
+function doGet() {
+  return ContentService.createTextOutput(
+    JSON.stringify({ status: 'ready', instructions: 'Use POST to submit form data' })
+  ).setMimeType(ContentService.MimeType.JSON);
+}

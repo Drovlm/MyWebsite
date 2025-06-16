@@ -1,6 +1,7 @@
 .body {
-  padding: 10px;
+   padding: 10px;
   padding-top: 20px;
+  padding-bottom: 23px;
   width: 55%;
   margin: auto;
   justify-content: center;
@@ -144,8 +145,12 @@ textarea {
   gap: 20px;
 }
 
-.link-card {
+.link-card-t, .link-card-g {
   width: 100px;
+   font-size: 18px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
   display: inline-block;
   align-items: center;
   text-align: center;
@@ -157,15 +162,12 @@ textarea {
   transition: transform 0.3s ease;
 }
 
-.link-card:hover {
+.link-card-t:hover {
   transform: translateY(-5px);
 }
 
-.link-card a {
-  font-size: 18px;
-  color: #2c3e50;
-  text-decoration: none;
-  font-weight: 500;
+ .link-card-g:hover {
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 1400px) {

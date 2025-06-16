@@ -16,8 +16,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
-<Route path="/Footer" element={<Footer />} />
           </Routes>
+          <Footer />
         </initReactI18next>
       </BrowserRouter>
     </div>
