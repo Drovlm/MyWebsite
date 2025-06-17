@@ -20,52 +20,50 @@ const ContactForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitStatus(null);
 
-    try {
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbyB_Iy9qgem3cf8BZaL_dgwnpewEGQjVnSdXoB7uEyt3zliUcRNX8myqyOzAL2KdfsamA/exec';
-      
-      const submissionData = new FormData();
-      submissionData.append('name', formData.name);
-      submissionData.append('email', formData.email);
-      submissionData.append('comment', formData.comment);
-      
-      const iframe = document.createElement('iframe');
-      iframe.style.display = 'none';
-      document.body.appendChild(iframe);
-      
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = `${scriptUrl}?t=${Date.now()}`;
-      form.target = iframe.name;
-      
-      submissionData.forEach((value, key) => {
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = key;
-        input.value = value;
-        form.appendChild(input);
-      });
-      
-      document.body.appendChild(form);
-      form.submit();
-      
-      setTimeout(() => {
-        document.body.removeChild(form);
-        document.body.removeChild(iframe);
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', comment: '' });
-      }, 2000);
-      
-    } catch (error) {
-      console.error('Submission error:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  try {
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbxttDtZVaOSmSr_9kC4JiMOMf_qBjLfzVx5GmFkuKbdvMw_KEM-ncFv2ZeUvng8ZYXsFw/exec';
+
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.name = 'hidden_iframe_' + Date.now();
+    document.body.appendChild(iframe);
+
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = `${scriptUrl}?t=${Date.now()}`;
+    form.target = iframe.name;
+
+    const fields = ['name', 'email', 'comment'];
+    fields.forEach((field) => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = field;
+      input.value = formData[field];
+      form.appendChild(input);
+    });
+
+    document.body.appendChild(form);
+    form.submit();
+
+    setTimeout(() => {
+      form.remove();
+      iframe.remove();
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', comment: '' });
+    }, 1500);
+
+  } catch (error) {
+    console.error('Submission error:', error);
+    setSubmitStatus('error');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <div className="form-hub">
@@ -149,11 +147,13 @@ const ContactForm = () => {
 const Contact = () => {
   return (
     <div className='body'>
-      <div className='contacts'>
+      <div className='contacts-container'>
                 <div className='social-links'>
           <h3>Connect Directly</h3>
+          <div className='links'>
           <a href="https://t.me/Drovlm" className="link-card-t" target="_blank" rel="noopener noreferrer">Telegram</a>
           <a href="https://github.com/Drovlm" className="link-card-g"target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
         </div>
         <ContactForm />
       </div>
