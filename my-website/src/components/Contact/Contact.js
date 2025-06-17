@@ -147,6 +147,7 @@ const ContactForm = () => {
 const Contact = () => {
   return (
     <div className='body'>
+      <div className='contacts'>
       <div className='contacts-container'>
                 <div className='social-links'>
           <h3>Connect Directly</h3>
@@ -156,6 +157,7 @@ const Contact = () => {
         </div>
         </div>
         <ContactForm />
+      </div>
       </div>
     </div>
   );
