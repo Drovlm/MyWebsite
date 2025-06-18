@@ -1,5 +1,5 @@
 .body {
-   padding: 10px;
+  padding: 10px;
   padding-top: 20px;
   padding-bottom: 23px;
   width: 55%;
@@ -24,7 +24,7 @@
 }
 
 .imp {
-font-weight: 900;
+  font-weight: 900;
 }
 
 ul {
@@ -45,22 +45,22 @@ li {
   .skill {
     width: auto;
   }
-    .body {
-  width: 85%;
+  .body {
+    width: 85%;
   }
 }
 
 @media screen and (max-width: 660px) {
   .body {
-    width:95%;
+    width: 95%;
   }
-  
+
   .skillinfo {
     padding: 12px;
     font-size: 18px;
   }
 
   ul {
-    padding-left: 15PX;
+    padding-left: 15px;
   }
 }

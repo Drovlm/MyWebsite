@@ -28,15 +28,13 @@ const Header = () => {
   return (
     <header className="header">
       <div className="rearhead">
-      <div className="headerreal">
-        <section className="logoName">
-          <p id="name">Mudar Jannoud</p>
-        </section>
+        <div className="headerreal">
+          <section className="logoName">
+            <p id="name">Mudar Jannoud</p>
+          </section>
 
-        <div className="options">
-          
-
-         {/* <div className="lang">
+          <div className="options">
+            {/* <div className="lang">
             <a onClick={() => handleLanguageChange("en")}>EN</a>
             <p>/</p>
             <a a onClick={() => handleLanguageChange("ru")}>
@@ -48,20 +46,19 @@ const Header = () => {
             </a>
           </div>*/}
 
-
-          <div className="info">
-            <div className="aboinfo" tabIndex="1" id="about">
-              <a onClick={handleaboutClick}>About me</a>
-            </div>
-            <div className="skills" tabIndex="1" id="skills">
-              <a onClick={handleSkillsClick}>Skills</a>
-            </div>
-            <div className="contact" tabIndex="1" id="contact">
-              <a onClick={handleContactClick}>Contact</a>
+            <div className="info">
+              <div className="aboinfo" tabIndex="1" id="about">
+                <a onClick={handleaboutClick}>About me</a>
+              </div>
+              <div className="skills" tabIndex="1" id="skills">
+                <a onClick={handleSkillsClick}>Skills</a>
+              </div>
+              <div className="contact" tabIndex="1" id="contact">
+                <a onClick={handleContactClick}>Contact</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </header>
   );

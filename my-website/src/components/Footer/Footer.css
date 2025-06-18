@@ -1,6 +1,6 @@
 .footer-container {
   width: 85%;
-  margin: auto ;
+  margin: auto;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 660px) {
-  .footer-content  {
+  .footer-content {
     width: 80%;
-  } 
+  }
 }

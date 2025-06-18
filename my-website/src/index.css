@@ -1,8 +1,8 @@
 body {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: "Playfair Display", Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F0F3FA;
+  background-color: #f0f3fa;
   font-size: 18px;
   margin: 0 auto;
   clear: both;
@@ -10,9 +10,8 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-    
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +19,7 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F0F3FA;
+  background: #f0f3fa;
 }
 
 ::-webkit-scrollbar-thumb {

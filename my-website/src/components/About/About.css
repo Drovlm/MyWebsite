@@ -1,7 +1,7 @@
 .bodys {
   padding: 10px;
   padding-top: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   width: 55%;
   margin: auto;
   justify-content: center;
@@ -27,6 +27,8 @@
   height: auto;
   border-radius: 130px;
   filter: grayscale(1);
+  pointer-events: none;
+  user-select: none;
 }
 
 .intro {
@@ -137,7 +139,7 @@ h{
 
     .image {
       padding-top: 20px;
-      padding-bottom: 20px;
+      padding-bottom: 8px;
     }
   
     .img {

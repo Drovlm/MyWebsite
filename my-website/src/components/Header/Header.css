@@ -8,8 +8,8 @@
   top: 0px;
   z-index: 999;
   background: rgba(202, 16, 16, 0);
-  backdrop-filter: blur( 20px );
-  -webkit-backdrop-filter: blur( 20px );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .rearhead {
@@ -64,7 +64,8 @@ a:active {
   transition: all 0.3s ease-out;
 }
 
-.aboinfo:active, .aboinfo:focus {
+.aboinfo:active,
+.aboinfo:focus {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: #b1c9ef;
@@ -79,7 +80,8 @@ a:active {
   transition: 0.3s;
 }
 
-.skills:active, .skills:focus {
+.skills:active,
+.skills:focus {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: #b1c9ef;
@@ -94,7 +96,8 @@ a:active {
   transition: 0.3s;
 }
 
-.contact:active, .contact:focus  {
+.contact:active,
+.contact:focus {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: #b1c9ef;
@@ -107,8 +110,8 @@ a:active {
 }
 
 @media screen and (max-width: 1070px) {
-  .header { 
-  width: auto;
+  .header {
+    width: auto;
   }
 
   .info {
@@ -119,8 +122,8 @@ a:active {
 @media screen and (max-width: 660px) {
   .rearhead {
     width: 100%;
-  } 
-  
+  }
+
   .lang {
     font-size: 17px;
     width: auto;
@@ -149,11 +152,11 @@ a:active {
 @media screen and (max-width: 400px) {
   .rearhead {
     width: 100%;
-  } 
-  
-  .logoName { 
-  font-size: 40px;
-  padding-top: 10px;
+  }
+
+  .logoName {
+    font-size: 40px;
+    padding-top: 10px;
   }
   .lang {
     font-size: 15px;

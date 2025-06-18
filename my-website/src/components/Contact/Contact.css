@@ -1,5 +1,5 @@
 .body {
-   padding: 10px;
+  padding: 10px;
   padding-top: 20px;
   padding-bottom: 23px;
   width: 55%;
@@ -45,7 +45,7 @@
 
 .form-hub {
   width: 100%;
-    justify-content: center;
+  justify-content: center;
   align-items: center;
   display: flex;
 }
@@ -55,7 +55,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  width: 95%; 
+  width: 95%;
 }
 
 p1 {
@@ -64,7 +64,7 @@ p1 {
   justify-content: center;
   align-items: center;
   display: flex;
-  }
+}
 
 .contact-form {
   display: flex;
@@ -78,7 +78,8 @@ p1 {
   gap: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -86,10 +87,11 @@ input, textarea {
   transition: border 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border-color: rgb(150, 180, 140);
-    box-shadow: 0 0 0 2px rgb(150, 170, 120);
+  box-shadow: 0 0 0 2px rgb(150, 170, 120);
 }
 
 textarea {
@@ -101,11 +103,12 @@ textarea {
   color: white;
   border: none;
   padding: 12px;
+  margin-top: 12px;
   border-radius: 6px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition:  0.3s ease;
+  transition: 0.3s ease;
 }
 
 .submit-btn:hover {
@@ -117,6 +120,8 @@ textarea {
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
+    line-height: 1.8;
+  text-align: start;
 }
 
 .error-message {
@@ -141,7 +146,7 @@ textarea {
 }
 
 .social-links {
-  width: 100%; 
+  width: 100%;
   padding-bottom: 20px;
 }
 
@@ -150,11 +155,11 @@ textarea {
 }
 
 .links {
-  width: 100%; 
+  width: 100%;
 }
 
-
-.link-card-t, .link-card-g {
+.link-card-t,
+.link-card-g {
   width: 100px;
   font-size: 18px;
   color: #000408;
@@ -167,7 +172,7 @@ textarea {
   margin-right: 30px;
   border-radius: 12px;
   background: white;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
 
@@ -175,7 +180,7 @@ textarea {
   transform: translateY(-5px);
 }
 
- .link-card-g:hover {
+.link-card-g:hover {
   transform: translateY(-5px);
 }
 
@@ -195,7 +200,7 @@ textarea {
   .body {
     width: 95%;
   }
-  
+
   .contacts {
     width: auto;
     font-size: 18px;
@@ -208,21 +213,22 @@ textarea {
   }
 
   .links {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 
-.link-card-t, .link-card-g {
-margin-right: 0px;
-}
+  .link-card-t,
+  .link-card-g {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 600px) {
   .form-container {
     padding: 24px;
   }
-  
+
   h1 {
     font-size: 24px;
   }

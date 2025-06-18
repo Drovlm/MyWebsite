@@ -6,17 +6,20 @@ const About = () => {
   return (
     <div className="bodys">
       <div className="aboutme">
-        <div className="image">
+        <div className="image" onContextMenu={(e) => e.preventDefault()}>
           <img className="img" src={prof} alt="Logo" />
         </div>
 
         <div className="intro">
           <p>
-         Hi, i'm  <span class="highlight">Mudar</span>
-         , a Syrian web developer based in Moscow. </p>
-           <p>
-         My passion is web development, and I’m proficient in React, HTML, CSS, SQL, and PHP.
-         I love creating dynamic and responsive web applications where the frontend (React, HTML, CSS) and backend (SQL, PHP) work together seamlessly as one cohesive system.
+            Hi, i'm <span class="highlight">Mudar</span>, a Syrian web developer
+            based in Moscow.{" "}
+          </p>
+          <p>
+            My passion is web development, and I’m proficient in React, HTML,
+            CSS, SQL, and PHP. I love creating dynamic and responsive web
+            applications where the frontend (React, HTML, CSS) and backend (SQL,
+            PHP) work together seamlessly as one cohesive system.
           </p>
           <p>
             I thrive on tackling challenging projects that push my skills to new
